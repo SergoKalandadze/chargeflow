@@ -1,0 +1,50 @@
+{
+  "name": "chargeflow-shopping-cart",
+  "version": "1.0.0",
+  "description": "Test work for chargeflow",
+  "main": "server.js",
+  "scripts": {
+    "start-app": "cross-env NODE_ENV=development nodemon app",
+    "start-app-prod": "cross-env NODE_ENV=production nodemon app",
+    "start": "cross-env NODE_ENV=development nodemon server",
+    "start-prod": "cross-env NODE_ENV=production nodemon server",
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "run-dev": "cross-env NODE_ENV=development nodemon build/app.js",
+    "run-build": "node ./build/app.js",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Sergo",
+  "license": "ISC",
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv-flow": "^3.1.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "moment": "^2.24.0",
+    "mongodb": "^6.3.0",
+    "nanoid": "^3.1.23",
+    "redis": "^2.8.0",
+    "socket.io": "^4.5.3",
+    "short-unique-id": "^4.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "dotenv-webpack": "^7.0.3",
+    "node-loader": "^2.0.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "nodemon": "^1.18.10",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
